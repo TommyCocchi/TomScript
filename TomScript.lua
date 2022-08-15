@@ -5,7 +5,7 @@ slaxml = require("lib/slaxml")
 handle_ptr = memory.alloc(13*8)
 
 local response = false
-local localVer = 0.1
+local localVer = 0.2
 async_http.init("raw.githubusercontent.com", "/TommyCocchi/TomScript/main/Version", function(output)
     currentVer = tonumber(output)
     response = true
